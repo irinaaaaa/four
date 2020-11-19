@@ -1,0 +1,9 @@
+def povorot(b):    #b - список чисел, н-р, ['9', '9', '6', '9']
+    for h, n in enumerate(b):
+            b[h] = int(n)
+    for i in range(len(b)):
+        if b[i] == 6:
+            b[i]=9
+            break
+    n=''.join(map(str, b))
+    return n
